@@ -1,0 +1,57 @@
+<!--Used two sections, section 1: For Fibonacci Calculator & section 2: To display the testing-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fibonacci </title>
+    <meta charset="windows-1252">
+    <meta charset="viewport" content='width-device-width,initial-scale=1.0'>
+    <!--Bootstrap stylesheet -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!--QUnit stylesheet -->
+    <link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.6.1.css">
+    <link rel="stylesheet" href="fib.css">
+
+  </head>
+  <body>
+    <!--Fibonacci section -->
+    <section id="hero1" class="hero">
+      <div class="inner">
+       <div class="copy">
+        <h1>Fibonacci Calculator</h1>
+        <br />
+        <label><h5>Input:</h5>  </label>
+        &nbsp;&nbsp;&nbsp;
+        <input type="number" name="fibno" min='1' oninput="validity.valid||(value='');" id='input'>
+        <br />
+         <h6> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>(Only positive Integers starting from 1)</i></h6>
+         <br />
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <button type="button" class="btn btn-outline-light" id='btn'>Generate</button>
+        &nbsp;
+        <br />
+        <br />
+
+     <p id='output'> </p>
+      </div>
+     </div>
+    </section>
+
+    <!--Qunit section to show the Test cases -->
+    <section class="content">
+      <div class="inner">
+        <div>
+          <h1 id="qunit-header">QUnit Test Suite</h1>
+          <h2 id="qunit-banner"></h2>
+          <div id="qunit-testrunner-toolbar"></div>
+          <h2 id="qunit-userAgent"></h2>
+          <ol id="qunit-tests"></ol>
+        </div>
+      </div>
+    </section>
+
+    <!--Qunit script -->
+    <script src="https://code.jquery.com/qunit/qunit-2.6.1.js"></script>
+    <script src="fib.js"></script>
+  </body>
+</html>
